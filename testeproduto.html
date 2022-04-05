@@ -1,0 +1,14 @@
+<html>
+<title>Produto em AR</title>
+<script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+<script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+<body style='margin : 0px; overflow: hidden;'>
+  <a-scene embedded arjs>
+    <!-- colocar aqui seu conteudo de AR -->
+    <a-image src="https://ricmrios.github.io/ar-intdig2020/blusa.jpg" position="-1 0 1,5"></a-image>
+    <a-text value="PP UNIPAC 2020"></a-text>
+    <!-- na linha abaixo, a camera se move de acordo com o marcador -->
+    <a-marker-camera preset='hiro'></a-marker-camera>
+  </a-scene>
+</body>
+</html>

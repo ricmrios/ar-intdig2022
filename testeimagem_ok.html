@@ -1,0 +1,19 @@
+<html>
+<title>Teste de AR</title>
+<script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+<script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+<body style='margin : 0px; overflow: hidden;'>
+  <a-scene embedded arjs>
+    <!-- colocar aqui seu conteudo de AR -->
+  <a-assets>
+    <a-image id="ground" src="https://ricmrios.github.io/ar-intdig2020/babu.jpg">
+<a-image src="#ground"></a-image>
+  </a-assets>
+    <a-plane height="2" width="1" color="blue" position='0 1 0'></a-plane>
+    <a-text value="\n\nViva Babu Santana!\n\n@babusantana" position='0,5 1 0,5' height="2" width="1" color="white"></a-text>
+    <a-image src="https://ricmrios.github.io/ar-intdig2020/babu.jpg" position="-1 0 1,5"></a-image>
+    <!-- na linha abaixo, a camera se move de acordo com o marcador -->
+    <a-marker-camera preset='hiro'></a-marker-camera>
+  </a-scene>
+</body>
+</html>
